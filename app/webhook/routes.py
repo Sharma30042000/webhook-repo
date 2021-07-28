@@ -12,5 +12,5 @@ def home():
 def receiver():
     if request.headers['Content-Type'] == 'application/json':
         dataa=json.dumps(request.json)
-        print(dataa)
-        return render_template('home.html',data=dataa)
+        print(data)
+        return render_template('home.html',data=data)
