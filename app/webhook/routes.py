@@ -14,5 +14,4 @@ def receiver():
         data=json.dumps(request.json)
         print(data)
 
-
         return render_template('home.html',data=data)
