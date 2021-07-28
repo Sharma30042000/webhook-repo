@@ -12,7 +12,7 @@ def home():
 def receiver():
     if request.headers['Content-Type'] == 'application/json':
         data=json.dumps(request.json)
-        print("ok again")
-        
+        print("ok final")
+
         print(data)
         return render_template('home.html',data=data)
