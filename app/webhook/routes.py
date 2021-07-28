@@ -11,6 +11,6 @@ def home():
 @webhook.route('/receiver', methods=["POST"])
 def receiver():
     if request.headers['Content-Type'] == 'application/json':
-        dataa=json.dumps(request.json)
+        data=json.dumps(request.json)
         print(data)
         return render_template('home.html',data=data)
